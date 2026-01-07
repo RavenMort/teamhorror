@@ -1,0 +1,12 @@
+bg.gif filter=lfs diff=lfs merge=lfs -text
+gif2.gif filter=lfs diff=lfs merge=lfs -text
+gif3.gif filter=lfs diff=lfs merge=lfs -text
+logo.png filter=lfs diff=lfs merge=lfs -text
+photo1.png filter=lfs diff=lfs merge=lfs -text
+photo2.png filter=lfs diff=lfs merge=lfs -text
+photo3.png filter=lfs diff=lfs merge=lfs -text
+photo4.png filter=lfs diff=lfs merge=lfs -text
+photo5.png filter=lfs diff=lfs merge=lfs -text
+theme.mp3 filter=lfs diff=lfs merge=lfs -text
+theme2.mp3 filter=lfs diff=lfs merge=lfs -text
+theme3.mp3 filter=lfs diff=lfs merge=lfs -text
