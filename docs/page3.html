@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ChildishMischief</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libertinus+Math&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bg-music" loop muted>
+  <source src="theme3.mp3" type="audio/mpeg">
+</audio>
+<script>
+  // Получаем элемент аудио
+  const bgMusic = document.getElementById('bg-music');
+
+  // Функция для запуска музыки и отключения muted
+  function playMusicOnce() {
+    bgMusic.muted = false;  // Убираем muted, если хочешь слышать звук
+    bgMusic.play().catch(e => console.log(e)); // На случай ошибок
+    // Убираем обработчик после первого клика, чтобы не включать заново
+    document.removeEventListener('click', playMusicOnce);
+  }
+
+  // Вешаем на весь документ обработчик клика
+  document.addEventListener('click', playMusicOnce);
+</script>
+
+ <div class="background"></div>
+
+    <div class="app">
+
+        <div class="panel glitch">
+            <img src="logo.png" class="logo glitch">
+            <div class="menu">
+                <span class="glitch" data-text="Take">Take</span>
+                <a href="index.html" class="card-link">
+                <span class="glitch active" data-text="Gallery">Gallery</span> </a>
+                <span class="glitch" data-text="Care">Care</span>
+                <span class="glitch" data-text="Of">Of</span>
+                <span class="glitch" data-text="Yourself">Yourself</span>
+            </div>
+        </div>
+<h1>"Childish Mischief"</h1>
+
+<div class="medic-wrapper">
+    <div class="medic-frame">
+        <img id="medicImg" src="photo5.png" class="medic">
+        <canvas id="glitchCanvas"></canvas>
+    </div>
+</div>
+<h2>Playing with fire can be dangerous, kids</h2>
+
+        <section class="hero">
+            <div class="hero-text">
+                
+            </div>
+        </section>
+
+        <section class="meet">
+        </section>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
