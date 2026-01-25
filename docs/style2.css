@@ -281,7 +281,7 @@ body, html {
 h2 {
   font-size: 20px;
   text-align: center;
-  color: black;
+  color: #ffffff;
 }
 p {
   font-size: 15px;
@@ -292,10 +292,10 @@ p {
 .hero-img {
   width: 300px;
   height: 300px;
-  opacity: 0.95;
+  opacity: 0.65;
 }
 .card-link {
-    opacity: 0.75;
+    opacity: 0.95;
 }
 h1 {
   font-size: 35px;
